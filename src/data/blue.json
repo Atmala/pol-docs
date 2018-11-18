@@ -1,0 +1,31 @@
+{
+    "test": {
+        "name": "Документы на Blue Card",
+        "steps":[
+            {
+                "question": "Вы работает на Umowa o Prace",
+                "answers": [
+                    {
+                        "text": "Да",
+                        "nextSteps": [
+                            {
+                                "question": "У вас безсрочный контракт",
+                                "answers": [
+                                    { "text": "Да" },
+                                    { "text": "Нет" }
+                                ]
+                            }
+                        ] 
+                    },
+                    { 
+                        "text": "Нет",
+                        "result":{
+                            "documents": [],
+                            "type": "Unknown"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
