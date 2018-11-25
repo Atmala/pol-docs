@@ -1,0 +1,36 @@
+@import '../../../assets/sass/blur.scss';
+
+.navbar-fixed-top {
+    background: #fff;
+    transition-duration: 0.4s;
+    border-bottom: 1px solid #e7eaec !important;
+    z-index: 2030;
+  }
+  .navbar-fixed-top,
+  .navbar-static-top {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 904;
+    box-shadow: 2px 0 3px rgba(0,0,0,.5);
+    height: 66px;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 32px 0 40px;
+    display: flex;
+    align-items: center;
+  }
+  .fixed-nav #wrapper {
+    margin-top: 0;
+  }
+  .navbar-header .glyphicon{
+      font-size: 20px;
+      color: white;
+      &:hover{
+          color: $warning;
+      }
+  }
+
+  .questions-section{
+      position: absolute;
+      right: 250px;
+  }

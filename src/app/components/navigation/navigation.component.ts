@@ -6,7 +6,8 @@ import {Router} from "@angular/router";
 
 @Component({
     selector: 'navigation',
-    templateUrl: './navigation.component.html'
+    templateUrl: './navigation.component.html',
+    styleUrls: ['./navigation.component.scss'],
 })
 export class Navigation implements OnInit {
     constructor( private router: Router) { }

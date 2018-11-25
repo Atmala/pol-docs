@@ -1,0 +1,57 @@
+@import '../../../assets/sass/blur.scss';
+@import '../../../assets/sass/variables';
+
+.nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+  }
+  .nav.navbar-right > li > a {
+    color: #999c9e;
+  }
+  
+  .nav.navbar-top-links > li > a:hover,
+  .nav.navbar-top-links > li > a:focus {
+    background-color: transparent;
+  }
+  .nav > li > a i {
+    margin-right: 6px;
+  }
+  .nav>li>a:focus, .nav>li>a:hover{
+    color: $primary;
+    background-color: transparent;
+    border-right: 3px $primary;
+  }
+  .nav > li.active > a {
+    color: #ffffff;
+  }
+  .navbar {
+    border: 0;
+  }
+  .navbar-default {
+    width: 220px;
+    left: 0;
+    z-index: 904;
+    display: block;
+    min-height: 100%;
+    background-color: $sidebar;
+    height: 100%;
+    position: fixed;
+  }
+  .navbar-top-links li {
+    display: inline-block;
+  }
+  .navbar-top-links li:last-child {
+    margin-right: 40px;
+  }
+  .body-small .navbar-top-links li:last-child {
+    margin-right: 0;
+  }
+  .navbar-top-links li a {
+    padding: 20px 10px;
+    min-height: 50px;
+  }
+
+.glyphicon{
+    padding-right: 5px;
+}

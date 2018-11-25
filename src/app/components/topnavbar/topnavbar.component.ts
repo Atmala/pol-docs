@@ -3,18 +3,17 @@ import {smoothlyMenu} from "../../app.helpers";
 
 @Component({
     selector: 'topnavbar',
-    templateUrl: 'topnavbar.component.html'
+    templateUrl: 'topnavbar.component.html',
+    styleUrls: ['topnavbar.component.scss'],
 })
 export class Topnavbar {
     ngOnInit() {
 
     }
     toggleNavigation(): void {
-       // jQuery("body").toggleClass("mini-navbar");
         smoothlyMenu();
     }
     logout() {
         localStorage.clear();
-        // location.href='http://to_login_page';
     }
 }
