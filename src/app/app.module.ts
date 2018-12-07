@@ -10,13 +10,15 @@ import {RouterModule} from "@angular/router";
 import {appRoutes} from "./app.routes";
 import {HomeComponent} from "./pages/home/home.component";
 import { TestService } from './services/test.service';
+import { QuestionnaireComponent } from './components/questionnaire/questionnaire/questionnaire.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Navigation,
     Topnavbar,
-    HomeComponent
+    HomeComponent,
+    QuestionnaireComponent
   ],
   imports: [
     BrowserModule,
