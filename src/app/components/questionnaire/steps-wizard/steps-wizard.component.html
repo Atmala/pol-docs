@@ -1,7 +1,9 @@
 <div *ngIf="this.currentStep; else elseBlock"> 
   {{this.currentStep.question}}? 
   <div class="row">
-    <button *ngFor="let answer of this.currentStep.answers">{{answer.text}}</button>
+      <button class="btn btn-w-m btn-primary" type="button" 
+      *ngFor="let answer of this.currentStep.answers; let i = index"
+      (click)="onStepAction(answer, i)">{{answer.text}}</button>
   </div>
 </div>
 <ng-template #elseBlock>No steps loaded so far.</ng-template>
