@@ -1,4 +1,4 @@
-export enum ResultType{
+export enum ResultType {
     Submit,
     Unknown
 }

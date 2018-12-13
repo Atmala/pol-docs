@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
-import {smoothlyMenu} from "../../app.helpers";
+import {smoothlyMenu} from '../../app.helpers';
 
 @Component({
-    selector: 'topnavbar',
+    selector: 'poldoc-topnavbar',
     templateUrl: 'topnavbar.component.html',
     styleUrls: ['topnavbar.component.scss'],
 })
-export class Topnavbar {
-    ngOnInit() {
-
-    }
+export class TopnavbarComponent {
     toggleNavigation(): void {
         smoothlyMenu();
     }

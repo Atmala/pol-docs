@@ -1,5 +1,6 @@
 {
     "test": {
+        "id": "blue",
         "name": "Документы на Blue Card",
         "steps":[
             {
