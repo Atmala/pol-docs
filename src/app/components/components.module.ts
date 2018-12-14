@@ -22,7 +22,8 @@ import { StepsWizardComponent } from './questionnaire/steps-wizard/steps-wizard.
   exports: [
     NavigationComponent,
     TopnavbarComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,8 @@
-<div class="ibox float-e-margins">
+<div class="ibox float-e-margins" 
+    [ngClass]="class"
+    [class.panel-blur]="!transparent">
   <div class="ibox-title">
+      <span *ngIf="labelText" class="label label-success pull-right">{{labelText}}</span>
       <h2>{{caption}}</h2>
   </div>
   <div class="ibox-content">

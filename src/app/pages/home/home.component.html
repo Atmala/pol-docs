@@ -1,16 +1,18 @@
 <div class="row">
     <div class="col-lg-3">
-        <div class="ibox float-e-margins" [routerLink]="['/questionnaire/blue']">
-            <div class="ibox-title">
-                <span class="label label-success pull-right">Monthly</span>
-                <h5>Income</h5>
-            </div>
-            <div class="ibox-content">
-                <h1 class="no-margins">40 886,200</h1>
-                <div class="stat-percent font-bold text-success">98% <i class="fa fa-bolt"></i></div>
-                <small>Total income</small>
-            </div>
-        </div>
+        <poldoc-panel caption="Blue card" class="questPanel" labelText="Documents" [routerLink]="['/questionnaire/blue']">
+            To work in Poland as a highly-qualified worker, you must obtain a residence permit for a fixed period for the purposes of highly qualified employment (the Blue Card) which is a single residence and work permit. To obtain this residence permit:
+            <ul>
+                <li>sign at least one-year long employment contract/preliminary contract</li>
+                <li>have higher education qualifications</li>
+                <li>have health insurance</li>
+            </ul>
+        </poldoc-panel>
+    </div>
+    <div class="col-lg-3">
+            <poldoc-panel caption="Polish Card" class="questPanel" labelText="Planned">
+                    The Polish Card is a document confirming belonging to the Polish nation. The Card can be granted to people who do not have Polish citizenship or permission to residein Poland and who are citizens of the former Soviet Union states
+            </poldoc-panel>
     </div>
 </div>
 <div class="row">
